@@ -24,5 +24,5 @@ row = cursor.fetchone()
 if row:
     print(row)
     
-"""Observação: esse script foi feita para coletar o último valor de uma query query
+"""Observação: esse script foi feito para coletar o último valor de uma query
 com o objetivo de armazená-lo em outra base para monitoração"""
