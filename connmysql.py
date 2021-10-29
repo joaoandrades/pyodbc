@@ -15,6 +15,8 @@ cnxn = pyodbc.connect('DRIVER={MySql ODBC Driver};'
 cnxn.setdecoding(pyodbc.SQL_WCHAR, encoding='utf-8')
 cnxn.setencoding(encoding='utf-8')
 
+cursor = cnxn.cursor()
+
 
 """Definindo a query dentro da função execute()"""
 cursor.execute("select user_id, user_name from users")
