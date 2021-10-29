@@ -22,7 +22,7 @@ cnxn.setencoding(encoding='utf-8')
 cursor = cnxn.cursor()
 
 """Definindo a query dentro da função execute()"""
-cursor.execute("SELECT eventid FROM zabbix.alerts order by eventid limit 1;")
+cursor.execute("select user_id, user_name from users;")
 """Utilizando o método fetchval() para obter o primeiro valor da primeira linha"""
 row = cursor.fetchval()
 """Mostra o valor que vou coletado"""
